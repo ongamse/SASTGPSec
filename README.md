@@ -1,6 +1,6 @@
 
 ## Overview
-SAST-VulnHub is an open-source repository designed to help security professionals, developers, and organizations evaluate Static Application Security Testing (SAST) tools. This repository contains intentionally vulnerable code in multiple programming languages, covering a wide range of security flaws that align with OWASP Top 10 and CWE (Common Weakness Enumeration) categories.
+SAST-Benchmark-Suite is an open-source repository designed to help security professionals, developers, and organizations evaluate Static Application Security Testing (SAST) tools. This repository contains intentionally vulnerable code in multiple programming languages, covering a wide range of security flaws that align with OWASP Top 10 and CWE (Common Weakness Enumeration) categories.
 
 By leveraging this repository, users can test and compare the effectiveness of various SAST solutions in detecting vulnerabilities, assessing false positives/negatives, and improving their security scanning workflows.
 
