@@ -33,7 +33,7 @@ jobs:
       run: |
         go mod init example.com/Go
         #${GITHUB_WORKSPACE}/sl analyze --wait --verbose --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} ./..
-        ${GITHUB_WORKSPACE}/sl analyze --wait --verbose --app OWASPCsharp--tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --csharp test.csproj
+        ${GITHUB_WORKSPACE}/sl analyze --wait --verbose --app OWASPCsharp--tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --csharp C#/test.csproj
       
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
