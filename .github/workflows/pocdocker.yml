@@ -19,6 +19,7 @@ jobs:
       run: |
         #sl analyze --verbose --wait --app "${GITHUB_REPOSITORY#*/}" --verbose --tag app.group="${GITHUB_REPOSITORY_OWNER}_${GITHUB_REPOSITORY#*/}" .
         go mod init example.com/Go
-        sl analyze --verbose --wait --app SASTGPSec_demo --verbose --tag app.group="${GITHUB_REPOSITORY_OWNER}_${GITHUB_REPOSITORY#*/}" ./..
+        #sl analyze --verbose --wait --app SASTGPSec_demo --verbose --tag app.group="${GITHUB_REPOSITORY_OWNER}_${GITHUB_REPOSITORY#*/}" ./...
+        sl analyze --verbose --wait --app OWASPRuby --verbose --tag app.group="${GITHUB_REPOSITORY_OWNER}_${GITHUB_REPOSITORY#*/}" --ruby ruby/.
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
